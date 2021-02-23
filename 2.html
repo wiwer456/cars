@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	.d{
+		display: flex;
+	}
+	.h1{
+		height: 200px;
+	}
+	.ca1{
+		position: absolute;
+		transition: 1s;
+		left: 150px;
+		top: 500px;
+	}
+	.fnsh{
+		width: 300px;
+		position: absolute;
+		top:0px;
+		left: 50px;
+	}
+	
+</style>
+
+<!--dv-->
+<div class="d">
+	<div class="">
+		<img src="finish.png">
+	</div>
+
+	<div>
+	<img src="car1.png" class="h1 ca1">
+	<img src="car2.png" class="h1 ca1">
+	<img src="car3.png" class="h1 ca1">
+	<img src="car4.png" class="h1 ca1">
+	<img src="car5.png" class="h1 ca1">
+	</div>
+	
+</div>
+
+
+
+<!--sc-->	
+	<script type="text/javascript">
+		let cars = document.querySelectorAll('.ca1')
+		let cad = 500
+		let cadp = 'px'
+		let cad2 = 500
+		let cad3 = 500
+		let cad4 = 500
+		let cad5 = 500
+		cars[0].style.left = '50px'
+		cars[0].style.top = '500px'
+		cars[1].style.left = '200px'
+		cars[1].style.top = '500px'
+		cars[2].style.left = '350px'
+		cars[2].style.top = '500px'
+		cars[3].style.left = '500px'
+		cars[3].style.top = '500px'
+		cars[4].style.left = '650px'
+		cars[4].style.top = '500px'
+		
+
+
+
+		cars[0].onclick = function(){
+			cars[0].style.top = cad - 100 + 'px'
+			cad = cad - 100
+			if (cad == 0){
+				alert ('1 финишировал')
+			}
+		} 
+		cars[1].onclick = function(){
+			cars[1].style.top = cad2 - 100 + 'px'
+			cad2 = cad2 - 100
+			if (cad2 == 0){
+				alert ('2 финишировал')
+			}
+		} 
+		cars[2].onclick = function(){
+			cars[2].style.top = cad3 - 100 + 'px'
+			cad3 = cad3 - 100
+			if (cad3 == 0){
+				alert ('3 финишировал')
+			}
+		} 
+		cars[3].onclick = function(){
+			cars[3].style.top = cad4 - 100 + 'px'
+			cad4 = cad4 - 100
+			if (cad4 == 0){
+				alert ('4 финишировал')
+			}
+		} 
+		cars[4].onclick = function(){
+			cars[4].style.top = cad5 - 100 + 'px'
+			cad5 = cad5 - 100
+			if (cad5 == 0){
+				alert ('5 финишировал')
+			}
+		} 
+
+
+</script>
+</body>
+</html>
